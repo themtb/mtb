@@ -383,7 +383,7 @@ s0.parentNode.insertBefore(s1,s0);
 
     try {
       // ✅ Only your Worker URL is visible — API key is completely hidden
-      const response = await fetch("https://mtb.minmagar825.workers.dev/", {
+      const response = await fetch("https://mtb.minmagar825.workers.dev", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
