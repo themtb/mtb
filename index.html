@@ -305,33 +305,39 @@ s0.parentNode.insertBefore(s1,s0);
             </div><!-- end of blog wrapper -->
 
         </div><!-- end of container -->
-    </section><!-- end of blog section -->
+    </section><!-- end of blog section --><!-- contact section -->
+<section class="section" id="contact">
+  <div class="container text-center">
+    <p class="section-subtitle">How can you communicate?</p>
+    <h6 class="section-title mb-5">Contact Me</h6>
 
-    <!-- contact section -->
-    <section class="section" id="contact">
-        <div class="container text-center">
-            <p class="section-subtitle">How can you communicate?</p>
-            <h6 class="section-title mb-5">Contact Me</h6>
-            <!-- contact form -->
-            <form action="https://api.web3forms.com/submit" class="contact-form col-md-10 col-lg-8 m-auto" method="POST">
-                 <input type="hidden" name="access_key" value="0d4cf97f-b191-4b79-bb07-0f43d879d917">
-                <div class="form-row">
-                    <div class="form-group col-sm-6">
-                        <input type="text" name="name" size="50" class="form-control" placeholder="Your Name" required>                 
-                    </div>
-                    <div class="form-group col-sm-6">
-                        <input type="email" name="email" class="form-control" placeholder="Enter Email"required onkeydown="if(event.key === 'Enter') event.preventDefault();">                 
-                    </div>
-                    <div class="form-group col-sm-12">
-                        <textarea name="message" id="message" rows="6"   class="form-control" placeholder="Write Something" required></textarea>
-                    </div>
-                    <div class="form-group col-sm-12 mt-3">
-                        <input type="submit" value="Send Message" class="btn btn-outline-primary rounded">
-                      </div>
-                </div>  
-            </form><!-- end of contact form -->
-        </div><!-- end of container -->
-    </section><!-- end of contact section -->
+    <!-- Success/Error Message -->
+    <div id="form-message" style="display:none; margin-bottom: 15px;"></div>
+
+    <!-- contact form -->
+    <form id="contactForm" class="contact-form col-md-10 col-lg-8 m-auto">
+      <div class="form-row">
+        <div class="form-group col-sm-6">
+          <input type="text" id="name" name="name" size="50"
+            class="form-control" placeholder="Your Name" required>
+        </div>
+        <div class="form-group col-sm-6">
+          <input type="email" id="email" name="email"
+            class="form-control" placeholder="Enter Email" required>
+        </div>
+        <div class="form-group col-sm-12">
+          <textarea id="message" name="message" rows="6"
+            class="form-control" placeholder="Write Something"></textarea>
+        </div>
+        <div class="form-group col-sm-12 mt-3">
+          <button type="submit" id="submitBtn"
+            class="btn btn-outline-primary rounded">Send Message</button>
+        </div>
+      </div>
+    </form><!-- end of contact form -->
+
+  </div><!-- end of container -->
+</section><!-- end of contact section -->
 	
 	    <!-- footer -->
     <div class="container">
